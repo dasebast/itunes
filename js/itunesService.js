@@ -59,7 +59,7 @@ app.service('itunesService', function($http, $q){
     			}
     			albumInfo.push(songObject);
     		}
-    		deferred.resolve(albumInfo);
+    		deferred.resolve(result);
     	}, function(err) {
     		deferred.reject(err);
     	});
