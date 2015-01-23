@@ -21,7 +21,7 @@
                 <option value="movie">Movie</option>
                 <option value="podcast">Podcast</option>
               </select>
-              <input type="text" class="form-control" ng-model="artist" placeholder="Search" >
+              <input type="text" class="form-control" ng-model="artist" placeholder="Search" ng-change="getSongData()">
               <button class="btn btn-primary" ng-click="getSongData()"> Submit </button>
 
               <input type="text" class="form-control filter" ng-model="filterOptions.filterText" placeholder="Filter results" >
